@@ -46,5 +46,22 @@ cd $ONOS_ROOT
 
 bazel-3.0.0 build onos
 
+bazel run onos-local clean debug
+
+mo teerminal khac
+
+./tools/test/bin/onos localhost
+
+app activate org.onosproject.openflow
+
+app activate org.onosproject.fwd
+
+mo terminal khac
+
+sudo mn --controller remote,ip=127.0.0.1 --custom script.py  --topo tp
+
+https://ernie55ernie.github.io/sdn/2020/07/21/setting-up-onos-controller-with-mininet.html
+
+https://gerrit.onosproject.org/plugins/gitiles/onos
 
 

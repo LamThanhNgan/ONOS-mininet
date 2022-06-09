@@ -42,4 +42,9 @@ EOF
 
 . ~/.bash_profile
 
+cd $ONOS_ROOT
+
+bazel-3.0.0 build onos
+
+
 
